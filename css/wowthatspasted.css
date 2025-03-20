@@ -1,0 +1,34 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #d883ff, #6a85ff, #23a6d5, #23d5ab, #66ff99);
+    background-size: 500% 500%;
+    animation: gradient 20s ease-in-out infinite;
+}
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 100%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 0%; }
+    100% { background-position: 0% 50%; }
+}
+/* ID Logo Animation */
+#logo {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    position: absolute;
+    animation: moveLogo 10s ease-in-out infinite alternate;
+}
+@keyframes moveLogo {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(-5deg); }
+}
