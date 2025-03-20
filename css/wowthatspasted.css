@@ -9,7 +9,8 @@ html, body {
     align-items: center;
 }
 body {
-    background: linear-gradient(45deg, #ff6b6b, #f06595, #d883ff, #6a85ff, #23a6d5, #23d5ab, #66ff99);
+    /* TEST LINEAR GD */
+    background: linear-gradient(45deg, #6a85ff, #23a6d5);
     background-size: 500% 500%;
     animation: gradient 20s ease-in-out infinite;
 }
